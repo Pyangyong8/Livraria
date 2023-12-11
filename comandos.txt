@@ -1,0 +1,55 @@
+instalar django
+    pip install django
+
+inicia o projeto django
+    django-admin startproject nomedoprojeto
+
+criar aplicativo
+    cd livraria
+    python manage.py startapp cadastro
+
+rodar o projeto
+    python manage.py runserver
+
+interromper projeto em execucao
+    no terminal, Ctrl+C
+
+registrar o app settings
+    INSTALLED_APPS = [....]
+
+criar arquivo urls.py no APP
+
+atualizar urls.py do projeto
+
+atualizar urls.py no app
+
+criar views....
+
+rodar migrações do banco
+    python manage.py makemigrations
+    python manage.py migrate
+criar usuario
+    python manage.py createsuperuser
+
+modelar as classes do banco no models.py
+rodar migracoes do banco
+
+inserir model no admin.py
+------------------------------------
+arquivos principais do projeto:
+    manage.py - cria apps, executa projeto, cria usuario....
+
+    urls - cuida do endereçamento do site,
+    definindo qual função executar para cada url
+
+    settings - preferencias gerais do projeto:
+    cadastrar apps, arquivos estáticos, tipo de banco de dados.
+
+    asgi, wsgi - deploy da aplicação - deixar online
+
+arquivos do app
+    models - Modelagem do banco de dados (em classes)
+    migrations(pasta) - descritivo de toda alteração em models
+    views - executa as funções para renderizar a página
+    apps - configuração do app
+    urls - cuida do endereçamento do site no aplicativo,
